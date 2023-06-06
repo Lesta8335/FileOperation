@@ -1,0 +1,7 @@
+ID: 4
+Name: Jimmy
+Balance: 0
+Active: 0
+Upgrades: 0
+Step: 1
+LimitStep: 99

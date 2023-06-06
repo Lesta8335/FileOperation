@@ -1,0 +1,57 @@
+﻿<Window x:Class="FileOperation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileOperation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="800" ResizeMode="NoResize" MouseMove="Window_MouseMove">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="285*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="86*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="10,289,278,10" Width="NaN" Grid.ColumnSpan="2"/>
+        <Button x:Name="ResultButton" Content="Зчитати F1" HorizontalAlignment="Left" Margin="10,405,0,10" Width="62" Grid.Column="1" Click="ResultButton_Click"/>
+        <ListBox x:Name="ListBox2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,278,304" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListBox3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="4,10,10,304" Grid.Column="3" Grid.ColumnSpan="4"/>
+        <ListBox x:Name="ListBox4" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="5,289,10,10" Grid.Column="3" Grid.ColumnSpan="4"/>
+        <Button x:Name="ResultButton3" Grid.Column="1" Content="Зчитати F3" HorizontalAlignment="Left" Margin="237,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="62" Click="ResultButton3_Click" Grid.ColumnSpan="2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="ResultButton4" Grid.Column="1" Content="Зчитати F4" HorizontalAlignment="Left" Margin="237,405,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="62" Click="ResultButton4_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="ResultButton2" Grid.Column="1" Content="Зчитати F2" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="63" Click="ResultButton2_Click"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="15,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="GenerateButton" Content="Додати у F1" Margin="15,256,157,0" VerticalAlignment="Top" Click="GenerateButton_Click" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="15,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="GenerateButton2" Content="Додати у F2" HorizontalAlignment="Left" Margin="15,167,0,0" VerticalAlignment="Top" Width="73" Click="GenerateButton2_Click" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="118,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button x:Name="GenerateButton4" Content="Додати у F4" HorizontalAlignment="Left" Margin="2,257,0,0" VerticalAlignment="Top" Width="74" Click="GenerateButton4_Click" Grid.Column="6" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="118,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="4" Grid.ColumnSpan="3"/>
+        <Button x:Name="GenerateButton3" Content="Додати у F3" HorizontalAlignment="Left" Margin="2,168,0,0" VerticalAlignment="Top" Width="74" Grid.Column="6" Click="GenerateButton3_Click" Foreground="#FF387716"/>
+        <Button x:Name="DeleteButton" Content="Видалити " HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Click ="DeleteButton_Click" Width="59" Foreground="#FFA70E0E"/>
+        <Button x:Name="DeleteButton2" Content="Видалити " HorizontalAlignment="Center" Margin="0,168,0,0" VerticalAlignment="Top" Click="DeleteButton2_Click" Width="59" Foreground="#FFA70E0E"/>
+        <Button x:Name="DeleteButton4" Grid.Column="4" Content="Видалити " HorizontalAlignment="Left" Margin="100,258,0,0" VerticalAlignment="Top" Click="DeleteButton4_Click" Width="59" Foreground="#FFA70E0E" Grid.ColumnSpan="2"/>
+        <Button x:Name="DeleteButton3" Content="Видалити " HorizontalAlignment="Left" Margin="100,168,0,0" VerticalAlignment="Top" Click="DeleteButton3_Click" Width="59" Grid.Column="4" Foreground="#FFA70E0E" Grid.ColumnSpan="2"/>
+        <Label x:Name="TomTom" Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="110,402,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center"/>
+        <ListBox x:Name="ParseListBox" Grid.Column="1" Margin="49,154,24,41"/>
+        <Button x:Name="ParseButton" Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="107,129,0,0" VerticalAlignment="Top" Width="96" Click="ParseButton_Click"/>
+        <Button x:Name="IterationButton4" Grid.Column="4" Content="Ітерація 4" HorizontalAlignment="Left" Margin="15,259,0,0" VerticalAlignment="Top" Width="67"/>
+        <Button x:Name="IterationButton3" Grid.Column="4" Content="Ітерація 3" HorizontalAlignment="Left" Margin="15,167,0,0" VerticalAlignment="Top" Width="67" Click="IterationButton3_Click"/>
+        <Button x:Name="IterationButton" Content="Ітерація 1" HorizontalAlignment="Left" Margin="168,257,0,0" VerticalAlignment="Top" Width="67" Click="IterationButton_Click"/>
+        <Button x:Name="IterationButton2" Content="Ітерація 2" HorizontalAlignment="Left" Margin="168,168,0,0" VerticalAlignment="Top" Width="67" Click="IterationButton2_Click"/>
+
+    </Grid>
+</Window>

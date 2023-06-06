@@ -1,0 +1,7 @@
+ID: 1
+Name: Tom
+Balance: 11111111111111
+Active: 1
+Upgrades: 1
+Step: 3
+LimitStep: 97

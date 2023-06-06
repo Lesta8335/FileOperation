@@ -1,0 +1,7 @@
+ID: 3
+Name: Lucy
+Balance: 3120
+Active: 0
+Upgrades: 0
+Step: 3
+LimitStep: 97
