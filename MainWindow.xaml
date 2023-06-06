@@ -1,0 +1,39 @@
+﻿<Window x:Class="FileOperation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileOperation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" MouseMove="Window_MouseMove">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="455*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="86*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="10,289,448,10" Width="NaN" Grid.ColumnSpan="2"/>
+        <Button x:Name="ResultButton" Content="Зчитати F1" HorizontalAlignment="Left" Margin="27,337,0,0" VerticalAlignment="Top" Height="39" Width="100" Grid.Column="1" Click="ResultButton_Click"/>
+        <ListBox x:Name="ListBox2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,448,304" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="ListBox3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="303,10,10,304" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <ListBox x:Name="ListBox4" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="304,289,10,10" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="ResultButton3" Grid.Column="1" Content="Зчитати F3" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="39" Width="100" Click="ResultButton3_Click"/>
+        <Button x:Name="ResultButton4" Grid.Column="1" Content="Зчитати F4" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="39" Width="100" Click="ResultButton4_Click"/>
+        <Button x:Name="ResultButton2" Grid.Column="1" Content="Зчитати F2" HorizontalAlignment="Left" Margin="27,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="39" Width="100" Click="ResultButton2_Click"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="11,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="GenerateButton" Content="Додати у F1" HorizontalAlignment="Left" Margin="147,257,0,0" VerticalAlignment="Top" Width="73" Click="GenerateButton_Click" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="11,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="GenerateButton2" Content="Додати у F2" HorizontalAlignment="Left" Margin="147,144,0,0" VerticalAlignment="Top" Width="73" Click="GenerateButton2_Click" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="425,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="GenerateButton4" Content="Додати у F4" HorizontalAlignment="Left" Margin="339,258,0,0" VerticalAlignment="Top" Width="74" Click="GenerateButton4_Click" Grid.Column="1" Foreground="#FF387716"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="425,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="GenerateButton3" Content="Додати у F3" HorizontalAlignment="Left" Margin="339,145,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" Click="GenerateButton3_Click" Foreground="#FF387716"/>
+        <Button x:Name="DeleteButton" Content="Видалити " HorizontalAlignment="Left" Margin="225,257,0,0" VerticalAlignment="Top" Click ="DeleteButton_Click" Grid.ColumnSpan="2" Width="60" Foreground="#FFA70E0E"/>
+        <Button x:Name="DeleteButton2" Content="Видалити " HorizontalAlignment="Left" Margin="225,145,0,0" VerticalAlignment="Top" Click="DeleteButton2_Click" Grid.ColumnSpan="2" Width="60" Foreground="#FFA70E0E"/>
+        <Button x:Name="DeleteButton4" Grid.Column="1" Content="Видалити " HorizontalAlignment="Left" Margin="275,259,0,0" VerticalAlignment="Top" Click="DeleteButton4_Click" Width="59" Foreground="#FFA70E0E"/>
+        <Button x:Name="DeleteButton3" Content="Видалити " HorizontalAlignment="Left" Margin="275,145,0,0" VerticalAlignment="Top" Click="DeleteButton3_Click" Width="59" Grid.Column="1" Foreground="#FFA70E0E"/>
+        <Label x:Name="TomTom" Grid.Column="1" Content="____" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Center" Width="90" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
