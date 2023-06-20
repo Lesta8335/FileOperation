@@ -31,7 +31,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="ResultButton4" Grid.Column="1" Content="Зчитати F4" HorizontalAlignment="Left" Margin="237,405,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="62" Click="ResultButton4_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="ResultButton4" Grid.Column="1" Content="Зчитати F4" HorizontalAlignment="Left" Margin="213,405,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="62" Click="ResultButton4_Click"/>
         <Button x:Name="ResultButton2" Grid.Column="1" Content="Зчитати F2" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.53,1.778" Height="19" Width="63" Click="ResultButton2_Click"/>
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="15,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
         <Button x:Name="GenerateButton" Content="Додати у F1" Margin="15,256,157,0" VerticalAlignment="Top" Click="GenerateButton_Click" Foreground="#FF387716"/>

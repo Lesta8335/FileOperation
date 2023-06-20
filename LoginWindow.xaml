@@ -1,0 +1,19 @@
+﻿<Window x:Class="FileOperation.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileOperation"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="289" Margin="0,91,0,0" Stroke="Black" VerticalAlignment="Top" Width="326"/>
+        <Label x:Name="VhidLabel" Content="Вхід у систему" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Height="38" Width="212" HorizontalContentAlignment="Center" FontSize="20" Background="#FFF1ECFF" BorderBrush="Black" BorderThickness="1,1,1,1" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="LoginLabel1" Content="Логін" HorizontalAlignment="Center" Margin="0,105,0,0" VerticalAlignment="Top" Width="180" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="LoginText" HorizontalAlignment="Center" Margin="0,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label x:Name="ParolLabel" Content="Пароль" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="180" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="Button" Content="Увійти" HorizontalAlignment="Center" Margin="0,322,0,0" VerticalAlignment="Top" Height="33" Width="90" Click="Button_Click" Background="#FFF1ECFF" BorderBrush="Black" FontWeight="Bold" FontSize="14"/>
+        <PasswordBox x:Name="ParolText" HorizontalAlignment="Center" Margin="0,263,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+
+    </Grid>
+</Window>
