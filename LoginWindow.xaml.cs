@@ -36,7 +36,7 @@ namespace FileOperation
                     mainWindow.Show();
 
                     // Закриття поточного вікна
-                    Close();
+                    //Close();
                 }
                 else
                 {
